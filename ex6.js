@@ -3,6 +3,9 @@ class StopWatch {
       this.secondsElapsed = 0;
   
       //Finish implementing the rest of the constructor so that secondsElapsed is updated
+      setInterval(() => {
+          this.secondsElapsed++
+      }, 1000)
     }
   
     getTime() {
@@ -14,7 +17,7 @@ class StopWatch {
   
   // Wait a few seconds...
   
-  stopWatch.getTime();
+stopWatch.getTime();
   // 'Seconds elapsed: 3'
   
   // Wait a few more seconds...
