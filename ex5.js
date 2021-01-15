@@ -5,9 +5,11 @@ class RunningTotal {
   
     add(n) {
       // Implement this method
+      this.currentTotal = n + this.currentTotal
     }
     getTotal() {
       // Implement this method
+      return this.currentTotal
     }
   }
   
@@ -16,5 +18,5 @@ class RunningTotal {
   runningTotal.add(3);
   runningTotal.add(7);
   runningTotal.add(7);
-  runningTotal.getTotal();
+  console.log(runningTotal.getTotal());
   // 17
